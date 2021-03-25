@@ -5,5 +5,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
+/* GET test page. */
+router.get('/test', function (req, res) {
+  res.send('test', { title: 'Azure' });
+});
 
 module.exports = router;
